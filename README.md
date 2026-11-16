@@ -2,6 +2,8 @@
 
 This repository runs the backend reply conversation and its durable, revision-bound **proposed basket** worker from PR #1948. The default basket path is `EXPLORATORY_EXPRESSION_V1`; the included PR #2010 changes cover Unicode character limits and failed-build choice handoff. Source hashes and extraction boundaries are in [PROVENANCE.md](PROVENANCE.md).
 
+See [CHANGELOG.md](CHANGELOG.md) for the comparison with the original Takes backend, deployment history, live-test results, and issues that remain unfixed.
+
 The service proposes conditional model inferences. It does not verify business fit, user account access, investability, performance, or an optimal allocation. A build does not place orders, trade, sign transactions, or start monitoring. There is no payment or credit adapter. Model usage is recorded for inspection only.
 
 ## Run locally
